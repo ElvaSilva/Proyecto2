@@ -31,6 +31,9 @@ public class Nodo {
         this.hDer = null;
     }
     
-    
+    public String mostrar(){
+        return this.patron + ". Ubicaciones en secuencia principal: " + 
+                this.ocurrencias + ". Frecuencia: " + this.valor;
+    }
     
 }
