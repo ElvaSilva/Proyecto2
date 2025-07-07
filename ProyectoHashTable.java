@@ -4,17 +4,28 @@
  */
 package proyectohashtable;
 
+import javax.swing.SwingUtilities; // Importar para SwingUtilities.invokeLater
+
 /**
+ * Clase principal que inicia la aplicación de bioinformática.
+ * Esta clase es responsable de crear y hacer visible la interfaz gráfica.
  *
  * @author elva
  */
 public class ProyectoHashTable {
 
     /**
-     * @param args the command line arguments
+     * Método principal que se ejecuta al iniciar la aplicación.
+     * @param args Argumentos de la línea de comandos (no utilizados en esta aplicación).
      */
-    public static void main(String[] args) {
-        // TODO code application logic here
-    }
     
+    public static void main(String[] args) {
+        // Asegurarse de que la creación y visualización de la GUI se realice en el Event Dispatch Thread (EDT).
+        // Esto es crucial para la seguridad de hilos en Swing y evita bloqueos o comportamientos inesperados.
+        SwingUtilities.invokeLater(() -> {
+            InterfazProye2 ventana = new InterfazProye2(); // Crea una instancia de tu ventana
+            ventana.setVisible(true); // Hace visible la ventana
+            ventana.setLocationRelativeTo(null); // Opcional: Centra la ventana en la pantalla
+        });
+    }
 }
