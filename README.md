@@ -1,1 +1,2 @@
-# Proyecto2
+Mediante el uso de una tabla de dispersión y un arból binario de búsqueda se almacena con que frecuencia aperences una seceucnias de ADN, cada una de tres bases nitrogenadas, y la aubicación de cada una de sus ocurrencias. El programa requiere un archivo inicial en el que se va a proporcionar la cadena de ADN a procesar; el usuario tiene la opción de ver todos los tripletes de menor a mayor, ver el que tenga la mayor o menor frecuencia unicamente, buscar un patrón específico, ver las colisiones que ocurrieron por la función hash y ver que aminoácidos generan los codones presentes.
+https://github.com/ElvaSilva/Proyecto2.git
